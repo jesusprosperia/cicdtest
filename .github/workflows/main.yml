@@ -32,7 +32,7 @@ jobs:
           aws-region: us-east-1
           instance-ids: ${{ secrets.AWS_STAGING_ID }}
 
-          working-directory: /home/ubuntu/criteria
+          working-directory: /home/ubuntu/cicdtest
           command: /bin/sh deploy.sh
 
       # Catch SSM outputs
