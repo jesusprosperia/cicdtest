@@ -33,7 +33,7 @@ jobs:
           instance-ids: ${{ secrets.AWS_STAGING_ID }}
 
           working-directory: /home/ubuntu/criteria
-          command: /bin/sh ./deploy.sh
+          command: npm install
 
       # Catch SSM outputs
       - name: Get the outputs
