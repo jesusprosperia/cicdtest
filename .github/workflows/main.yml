@@ -33,7 +33,7 @@ jobs:
           instance-ids: ${{ secrets.AWS_STAGING_ID }}
 
           working-directory: /home/ubuntu/cicdtest
-          command: /bin/sh deploy.sh
+          command: mkdir aaaaaaaaaaaaaa
 
       # Catch SSM outputs
       - name: Get the outputs
