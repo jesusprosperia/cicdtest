@@ -33,7 +33,7 @@ jobs:
           instance-ids: ${{ secrets.AWS_STAGING_ID }}
 
           working-directory: /home/ubuntu/cicdtest
-          command: git stash; npm install
+          command: git stash; /bin/sh deploy.sh
                   
 
       # Catch SSM outputs
