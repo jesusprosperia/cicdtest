@@ -1,0 +1,192 @@
+@import url('loader.css');
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #28a745;
+  --secondary-shadow: rgba(40, 167, 69, 0.25);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.home .input-group > .custom-range:focus,
+.home .input-group > .custom-control-label:focus,
+.home .form-control:not(.is-invalid):focus,
+.home .custom-control-input:focus ~ .custom-control-label::before,
+.modal .input-group > .custom-range:focus,
+.modal .input-group > .custom-control-label:focus,
+.modal .form-control:not(.is-invalid):focus,
+.modal .custom-control-input:focus ~ .custom-control-label::before,
+.tippy-tooltip .input-group > .custom-range:focus,
+.tippy-tooltip .input-group > .custom-control-label:focus,
+.tippy-tooltip .form-control:not(.is-invalid):focus,
+.tippy-tooltip .custom-control-input:focus ~ .custom-control-label::before { 
+  box-shadow: 0 0 0 0.2rem var(--secondary-shadow) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.home .btn-success, .modal .btn-success {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.home .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.modal .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.tippy-tooltip .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.home .custom-select:focus,
+.tippy-tooltip .custom-select:focus  {
+  border-color: var(--secondary-color) !important;
+}
+
+.home .custom-control-input:checked ~ .custom-control-label::before,
+.modal .custom-control-input:checked ~ .custom-control-label::before,
+.tippy-tooltip .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.home .custom-range::-webkit-slider-thumb,
+.modal .custom-range::-webkit-slider-thumb,
+.tippy-tooltip .custom-range::-webkit-slider-thumb {
+  background-color: var(--secondary-color) !important;
+}
+
+.home .custom-range:focus::-webkit-slider-thumb,
+.modal .custom-range:focus::-webkit-slider-thumb,
+.tippy-tooltip .custom-range:focus::-webkit-slider-thumb,
+.home .custom-select:focus,
+.tippy-tooltip .custom-select:focus  {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem var(--secondary-shadow) !important;
+}
+
+.app {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.slider-btn:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.description-tooltip {
+  text-align: left !important;
+}
+
+.col-form-label {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.slider.slider-horizontal {
+  width: 400px !important;
+}
+
+.button-add::before {
+  content: '+';
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.button-copy::before {
+  content: '';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button-remove::before {
+  content: '-';
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.flashpool {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  max-height: 400px;
+  width: 260px;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+  z-index: 9999999;
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  .container {
+    max-width: initial !important;
+  }
+}
+
+.col-form-label {
+  font-size: 16px !important; 
+  font-weight: 400 !important;
+}
+
+.slider:focus {
+  outline: none !important;
+}
+
+img.loading {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.small-control {
+  height: calc(1.5em + 2px) !important;
+  padding: 0px !important;
+  font-size: .875rem;
+  line-height: 1 !important;
+  border-radius: .2rem;
+}
+
+.small-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes grow {
+  0% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+  }
+}
+
+.min-max-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.min-max-picker > div {
+  width: 49%;
+}
+
+@media (min-width: 768px){
+  .container, .container-md, .container-sm {
+      max-width: 90% !important;
+  }
+}

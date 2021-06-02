@@ -1,0 +1,23 @@
+{
+    "development": {
+        "PORT": 3000,
+        "AWS_LAMBDA_UNIFIED": "https://njwhpd04yj.execute-api.us-east-1.amazonaws.com/development/compute-effects",
+        "MONGODB_URI": "mongodb://localhost:27017/SociaiDB",
+        "JWT_SECRET": "lkajsdlkajsldkjasldjalksdjlaksdlaksjdl",
+        "sendGridKey": "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"
+    },
+    "staging": {
+        "PORT": 3000,
+        "AWS_LAMBDA_UNIFIED": "https://28sz513fi0.execute-api.us-east-1.amazonaws.com/staging/compute-effects",
+        "MONGODB_URI": "mongodb+srv://giorgi:giorgitemp@cluster0-nejoj.mongodb.net/SociaiDB",
+        "JWT_SECRET": "lkajsdlkajsldkjasldjalksdjlaksdlaksjdl",
+        "sendGridKey": "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"
+    },
+    "production": {
+        "PORT": 3000,
+        "AWS_LAMBDA_UNIFIED": "https://jie0fqnvtj.execute-api.us-east-1.amazonaws.com/production/compute-effects",
+        "MONGODB_URI": "mongodb+srv://giorgi:giorgitemp@cluster0-nejoj.mongodb.net/SociaiDB",
+        "JWT_SECRET": "lkajsdlkajsldkjasldjalksdjlaksdlaksjdl",
+        "sendGridKey": "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"
+    }
+}

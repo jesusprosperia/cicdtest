@@ -1,0 +1,71 @@
+{
+  "id": "284120607990",
+  "name": "test",
+  "collection": "data_1592568728905_test",
+  "matchCase": "{}",
+  "filters": [],
+  "criterias": [
+    {
+      "criteria": "income_per_capita",
+      "priority": "low"
+    }
+  ],
+  "policies": [
+    {
+      "name": "My name",
+      "short_name": "test",
+      "split_columns": [
+        "family_size"
+      ],
+      "budget": 2670713,
+      "costsFormModel": {
+        "factorize": true,
+        "impactFactors": [
+          "factor_1"
+        ],
+        "costFactorEnabled": true,
+        "costFactors": [
+          "impact_factor"
+        ],
+        "cost_type": "adjustable",
+        "mon_cost": {
+          "min": 1,
+          "max": 1000,
+          "value": 682
+        },
+        "selectedSection": {
+          "name": "B",
+          "value": 20
+        },
+        "pie_label": "test"
+      },
+      "statistics": [
+        {
+          "active": true,
+          "column": "factor_2",
+          "section": {
+            "name": "B",
+            "value": 20
+          },
+          "type": "count",
+          "name": "test label"
+        }
+      ],
+      "description": "<p>tessaasdq</p>",
+      "description_json": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "tessaasdq"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
