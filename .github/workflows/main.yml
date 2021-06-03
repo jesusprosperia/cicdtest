@@ -27,7 +27,7 @@ jobs:
         host: ${{ secrets.AWS_HOST }}
         username: ${{ secrets.AWS_USER }}
         key: ${{ secrets.AWS_SSH_KEY }}
-        script: ls
+        script: sh depploy.sh
 
     # Catch SSM outputs
     - name: Get the outputs
