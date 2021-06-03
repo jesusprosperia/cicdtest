@@ -34,7 +34,6 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       env:
           SSH_PRIVATE_KEY: ${{ secrets.AWS_SSH_KEY }}
-          ARGS: "-rltgoDzvO --delete"
           SOURCE: "./"
           REMOTE_HOST: ${{ secrets.AWS_HOST }}
           REMOTE_USER: ${{ secrets.AWS_USER }}
